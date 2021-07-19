@@ -1,0 +1,3 @@
+[submodule "simple_http_proxy"]
+	path = simple_http_proxy
+	url = https://github.com/SombrePigeon/simple_http_proxy.git
