@@ -14,3 +14,7 @@ services:
         restart: always
         networks:
             - nginxproxygitdeploy_net-proxy
+
+networks:
+    nginxproxygitdeploy_net-proxy:
+        external: true
