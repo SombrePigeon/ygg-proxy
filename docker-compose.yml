@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    proxy:
+        build: 
+            context:
+                ./simple_http_proxy
+            args:
+                HOST: https://yggtorrent.li
+        environment:
+            - VIRTUAL_HOST=ygg.torrent.fenrir.ovh
+            - LETSENCRYPT_HOST=ygg.torrent.fenrir.ovh
+            - LETSENCRYPT_EMAIL=contact@alexismartial.fr
+        restart: always
+        networks:
+            - nginxproxygitdeploy_net-proxy
