@@ -6,7 +6,7 @@ services:
             context:
                 ./simple_http_proxy
             args:
-                HOST: https://yggtorrent.li
+                HOST: yggtorrent.li
         environment:
             - VIRTUAL_HOST=*.ygg.torrent.fenrir.ovh
             - LETSENCRYPT_HOST=*.ygg.torrent.fenrir.ovh
