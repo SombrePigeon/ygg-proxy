@@ -8,8 +8,8 @@ services:
             args:
                 HOST: https://yggtorrent.li
         environment:
-            - VIRTUAL_HOST=ygg.torrent.fenrir.ovh
-            - LETSENCRYPT_HOST=ygg.torrent.fenrir.ovh
+            - VIRTUAL_HOST=*.ygg.torrent.fenrir.ovh
+            - LETSENCRYPT_HOST=*.ygg.torrent.fenrir.ovh
             - LETSENCRYPT_EMAIL=contact@alexismartial.fr
         restart: always
         networks:
